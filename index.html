@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Esteban Castaño Soto | Mi perfil</title>
+	<style>
+		:root{--ink:#24104f;--muted:#49315f;--green:#5b168a;--paper:#f5f0ff;--line:#ead9ff;--card:#fff}
+		*{box-sizing:border-box}
+		body{margin:0;padding:40px 18px;background:radial-gradient(ellipse at 12% 8%,#ffea00 0,transparent 36%),radial-gradient(ellipse at 92% 20%,#ff45b5 0,transparent 35%),radial-gradient(ellipse at 55% 95%,#00f5ff 0,transparent 38%),linear-gradient(135deg,#6325ff,#ff2d9b 52%,#00d9a6);color:var(--ink);font:16px/1.65 "Segoe UI",Arial,sans-serif}
+		main{max-width:900px;margin:auto}
+		.label{display:table;margin:0 0 16px;padding:7px 14px;border:1px solid #fff;background:#fff2a8;border-radius:30px;color:#8b145d;font-size:.8rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase;box-shadow:0 5px 16px #6747a51a}
+		.label:before{display:inline-block;width:24px;height:3px;margin:0 10px 4px 0;border-radius:9px;background:linear-gradient(90deg,#ff7c91,#ffbd59);content:""}
+		.card{overflow:hidden;border:1px solid #ffffffc9;border-radius:24px;background:var(--card);box-shadow:0 22px 60px #543b7a24}
+		header{display:flex;align-items:center;gap:30px;padding:38px;background:linear-gradient(115deg,#fff044,#ff9adf 52%,#76fff0)}
+		.photo{display:grid;flex:0 0 150px;width:150px;height:150px;place-items:center;border:6px solid white;border-radius:50%;background:linear-gradient(135deg,#ffb6c8,#ffd77b,#a9e8da);color:var(--green);font-size:3.5rem;box-shadow:0 8px 24px #6049a52e}
+		.photo img{width:100%;height:100%;border-radius:50%;object-fit:cover}
+		.role{display:inline-block;margin:0;padding:5px 12px;border-radius:20px;background:#fff9;color:#a01472;font-weight:800}
+		h1{margin:8px 0 2px;color:#6b16c5;font:700 clamp(2rem,5vw,3rem)/1.15 Georgia,"Times New Roman",serif;letter-spacing:-.04em}
+		.sub{margin:10px 0 0;color:#c21b72}
+		.intro{margin:0;padding:24px 38px;border-bottom:1px solid var(--line);background:linear-gradient(90deg,#fff,#fff0fb);color:#34204f}
+		.interests{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 36px;padding:0 38px 24px}
+		.item{position:relative;padding:21px 14px;border-bottom:1px solid var(--line)}
+		.item h2{color:#a51678}
+		h2{margin:0 0 7px;font-size:1rem}
+		.item p{margin:0;color:var(--muted)}
+		.contact{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:0 38px 32px;padding:18px 20px;border:1px solid #e8a9ff;border-radius:14px;background:linear-gradient(100deg,#fff044,#ffb0e8 55%,#8affec)}
+		.contact strong,.contact small{display:block}.contact strong{color:#7b159e}.contact small{color:#49315f}
+		a{color:#5711bd;font-weight:800;overflow-wrap:anywhere;text-underline-offset:3px}
+		footer{padding-top:16px;color:#fff;font-size:.85rem;font-weight:700;text-align:center;text-shadow:0 1px 3px #31105e}
+		@media(max-width:600px){body{padding:22px 13px}header{flex-direction:column;gap:16px;padding:28px 20px;text-align:center}.photo{flex-basis:130px;width:130px;height:130px}.intro{padding:21px;text-align:center}.interests{grid-template-columns:1fr;padding:0 23px 20px}.contact{align-items:flex-start;flex-direction:column;margin:0 23px 24px;padding:17px}}
+	</style>
+</head>
+<body>
+	<main>
+		<p class="label">Mi perfil estudiantil</p>
+		<article class="card">
+			<header>
+				<div class="photo" aria-label="Foto de perfil"><img src="mi%20foto.jpg" alt="Foto de Esteban Castaño Soto"></div>
+				<div>
+					<p class="role">Estudiante de grado 11</p>
+					<h1>Esteban Castaño Soto</h1>
+					<p class="sub">17 años</p>
+				</div>
+			</header>
+			<p class="intro">¡Hola! Tengo 17 años y soy estudiante de grado 11. En mis tiempos libres me gusta estar con mis amigos. Aquí comparto un poco de lo que me interesa y de las metas que quiero alcanzar.</p>
+			<section class="interests" aria-label="Mis metas e intereses">
+				<div class="item"><h2>🎓 Aspiraciones educativas</h2><p>Quiero ser alguien en la vida con ayuda de las cosas que aprendo, y ser siempre responsable con lo que me toque hacer.</p></div>
+				<div class="item"><h2>💻 Intereses tecnológicos</h2><p>Me gustaría llegar a crear juegos y páginas web, y que cada vez se me haga más fácil.</p></div>
+				<div class="item"><h2>🎨 Otros intereses</h2><p>Quiero que mi familia esté bien y, más adelante, tener muchos vehículos.</p></div>
+				<div class="item"><h2>📚 Áreas de estudio</h2><p>De las distintas áreas, las que más me gustan son Ciencias Sociales y Educación Física.</p></div>
+			</section>
+			<div class="contact"><div><strong>Mi contacto</strong><small>Escríbeme a este correo</small></div><a href="mailto:esteban.castano@iegimnasiodelcalima.edu.co">esteban.castano@iegimnasiodelcalima.edu.co</a></div>
+		</article>
+		<footer>Mis metas, mis intereses y lo que me inspira.</footer>
+	</main>
+</body>
+</html>
